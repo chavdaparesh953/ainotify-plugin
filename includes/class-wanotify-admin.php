@@ -200,9 +200,9 @@ class WaNotify_Admin {
                         </div>
 
                         <div class="wanotify-field-group">
-                            <label for="wanotify_api_key"><?php esc_html_e( 'WaNotify Inbound API Key (Two-Way COD Actions)', 'wanotify' ); ?></label>
-                            <input type="password" id="wanotify_api_key" name="wanotify_settings[api_key]" value="<?php echo esc_attr( $api_key ); ?>" class="regular-text" placeholder="wn_live_..." />
-                            <p class="description"><?php esc_html_e( 'Authorizes WaNotify to confirm COD orders or cancel fake orders directly in your WooCommerce store.', 'wanotify' ); ?></p>
+                            <label for="wanotify_api_key"><?php esc_html_e( 'WaNotify Inbound API Key', 'wanotify' ); ?> <span style="font-weight: normal; color: #6b7280; font-size: 11px;">(Optional — Leave blank if using Webhook Secret)</span></label>
+                            <input type="password" id="wanotify_api_key" name="wanotify_settings[api_key]" value="<?php echo esc_attr( $api_key ); ?>" class="regular-text" placeholder="Optional (e.g. wn_live_...)" />
+                            <p class="description"><?php esc_html_e( 'Optional. If left blank, WaNotify automatically uses your Webhook Secret for secure HMAC two-way verification.', 'wanotify' ); ?></p>
                         </div>
 
                         <hr class="wanotify-divider" />
